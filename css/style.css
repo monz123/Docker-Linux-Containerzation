@@ -1,0 +1,162 @@
+.navbar-expand-lg{
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1));
+  font-weight: bolder;
+  font-size: x-large;
+}
+.card{
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-width: 0px !important;
+}
+.navbar-brand{
+  font-size: x-large !important;
+}
+.bg{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/bg1.jpg');
+}
+.card-text{
+  text-align: justify;
+  font-weight: bold;
+}
+img{
+  border-style: solid !important;
+}
+.display-4 {
+  font-weight: bolder !important;
+  background-image: linear-gradient(to right, black, white);
+  padding-left: 20px;
+  color: white;
+}
+.team-pic{
+  padding-right: 50px;
+}
+.image-name{
+  padding-right: 75px;
+}
+.card{
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-width: 0px !important;
+}
+.card-img-top{
+  border-width: 3px;
+  border-color: black;
+}
+.card-img-top1{
+  border-style: ridge !important;
+  border-width: 8px;
+  border-color: darkgreen;
+}
+.card-img-top2{
+  border-style: ridge !important;
+  border-width: 8px;
+  border-color: deeppink;
+}
+.card-img-top3{
+  border-style: ridge !important;
+  border-width: 8px;
+  border-color: yellow;
+}
+.card-img-top4{
+  border-style: ridge !important;
+  border-width: 8px;
+  border-color: deepskyblue;
+}
+.card-img-top5{
+  border-style: ridge !important;
+  border-width: 8px;
+  border-color: darkorange;
+}
+.card1{
+  background-color: lightgreen;
+}
+.card2{
+  background-color: lightpink;
+}
+.card3{
+  background-color: lightgoldenrodyellow;
+}
+.card4{
+  background-color: lightseagreen;
+}
+.card5{
+  background-color: lightsalmon;
+}
+.name{
+  padding-left: 30px;
+}
+.team{
+  padding-left: 340px;
+}
+a {
+  color: #2487ce;
+}
+
+a:hover {
+  color: #469fdf;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lucida Console", Courier, monospace;
+  font-weight: bolder !important;
+}
+h1, h2{
+  font-family: Georgia !important;
+}
+.smallJumbotron {
+  padding: 10px !important;
+}
+.carousel-inner img {
+  height: 450px;
+  width: 800px;
+  position: center;
+  margin: auto;
+}
+.content4{
+  font-family: "Open Sans", sans-serif;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 25px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: justify;
+}
+.carousel-indicators li{
+  background-color: #491217 !important;
+  height: 10px !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #23272b;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)) ;
+}
+.about{
+  font-weight: bold !important;
+  font-size: large;
+  text-align: justify;
+  background-color: lightgrey !important;
+  padding: 20px;
+}
+.linked{
+  padding-right: 220px;
+}
+.linkedin{
+  padding-left: 80px;
+}
+.dropdown-menu{
+  background-color: lightgrey !important;
+  color: white !important;
+  font-size: larger !important;
+  font-weight: bolder !important;
+  border-radius: 20px !important;
+}
