@@ -3,11 +3,6 @@
   font-weight: bolder;
   font-size: x-large;
 }
-.card{
-  background-color: transparent !important;
-  border-color: transparent !important;
-  border-width: 0px !important;
-}
 .navbar-brand{
   font-size: x-large !important;
 }
@@ -16,10 +11,6 @@
   height: 100%;
   width: 100%;
   background-image: url('../images/bg1.jpg');
-}
-.card-text{
-  text-align: justify;
-  font-weight: bold;
 }
 img{
   border-style: solid !important;
@@ -35,55 +26,6 @@ img{
 }
 .image-name{
   padding-right: 75px;
-}
-.card{
-  background-color: transparent !important;
-  border-color: transparent !important;
-  border-width: 0px !important;
-}
-.card-img-top{
-  border-width: 3px;
-  border-color: black;
-}
-.card-img-top1{
-  border-style: ridge !important;
-  border-width: 8px;
-  border-color: darkgreen;
-}
-.card-img-top2{
-  border-style: ridge !important;
-  border-width: 8px;
-  border-color: deeppink;
-}
-.card-img-top3{
-  border-style: ridge !important;
-  border-width: 8px;
-  border-color: yellow;
-}
-.card-img-top4{
-  border-style: ridge !important;
-  border-width: 8px;
-  border-color: deepskyblue;
-}
-.card-img-top5{
-  border-style: ridge !important;
-  border-width: 8px;
-  border-color: darkorange;
-}
-.card1{
-  background-color: lightgreen;
-}
-.card2{
-  background-color: lightpink;
-}
-.card3{
-  background-color: lightgoldenrodyellow;
-}
-.card4{
-  background-color: lightseagreen;
-}
-.card5{
-  background-color: lightsalmon;
 }
 .name{
   padding-left: 30px;
@@ -159,4 +101,48 @@ h1, h2{
   font-size: larger !important;
   font-weight: bolder !important;
   border-radius: 20px !important;
+}
+.main{
+  display: flex;
+  background: black;
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+  height: 3in;
+}
+.main-branch1{
+  width: 33.33%;
+  margin: 30px;
+  background-color: darkred;
+  box-shadow: 7px 7px orangered;
+}
+.main-branch2{
+  width: 33.33%;
+  margin: 30px;
+  background-color: darkgreen;
+  box-shadow: 7px 7px lightgreen;
+}
+.main-branch3{
+  width: 33.33%;
+  margin: 30px;
+  background-color: darkblue;
+  box-shadow: 7px 7px deepskyblue;
+}
+.main-branch4{
+  width: 33.33%;
+  margin: 30px;
+  background-color: saddlebrown;
+  box-shadow: 7px 7px rosybrown;
+}
+.main-branch5{
+  width: 33.33%;
+  margin: 30px;
+  background-color: darkmagenta;
+  box-shadow: 7px 7px magenta;
+}
+.main-branch6{
+  width: 33.33%;
+  margin: 30px;
+  background-color: darkorange;
+  box-shadow: 7px 7px orangered;
 }
