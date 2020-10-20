@@ -24,9 +24,11 @@
   font-weight: bolder;
   font-size: x-large;
 }
-.navbar-expand-lg-page6{
-  background-image: linear-gradient(to right, orangered,darkorange);
-
+.navbar-expand-lg-page6 {
+  background-image: linear-gradient(to right, orangered, darkorange);
+  font-weight: bolder;
+  font-size: x-large;
+}
 .navbar-expand-lg-page5{
   background-image: linear-gradient(to right, darkmagenta, magenta);
   font-weight: bolder;
