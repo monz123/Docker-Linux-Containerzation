@@ -14,11 +14,18 @@
   font-size: x-large;
 }
 
-.navbar-expand-lg-page3{
+.navbar-expand-lg-page3 {
   background-image: linear-gradient(to right, darkblue, deepskyblue);
-
+  font-weight: bolder;
+  font-size: x-large;
+}
 .navbar-expand-lg-page4{
   background-image: linear-gradient(to right, saddlebrown, rosybrown);
+  font-weight: bolder;
+  font-size: x-large;
+}
+.navbar-expand-lg-page5{
+  background-image: linear-gradient(to right, darkmagenta, magenta);
   font-weight: bolder;
   font-size: x-large;
 }
@@ -188,3 +195,6 @@ hr.class-3 {
   border-top: 7px solid deepskyblue;
 }
 
+hr.class-5 {
+  border-top: 7px solid magenta;
+}
