@@ -4,7 +4,12 @@
   font-size: x-large;
 }
 .navbar-expand-lg-page1{
-  background-image: linear-gradient(to right, orangered, darkred);
+  background-image: linear-gradient(to right, darkred, orangered);
+  font-weight: bolder;
+  font-size: x-large;
+}
+.navbar-expand-lg-page2{
+  background-image: linear-gradient(to right, darkgreen, lightgreen);
   font-weight: bolder;
   font-size: x-large;
 }
@@ -51,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 p,li,ul{
   color: white;
 }
-h1, h2{
+h1, h2,h3{
   font-family: Georgia !important;
 }
 .smallJumbotron {
@@ -153,4 +158,7 @@ h1, h2{
 }
 hr.class-1 {
   border-top: 7px solid orangered;
+}
+hr.class-2 {
+  border-top: 7px solid lightgreen;
 }
