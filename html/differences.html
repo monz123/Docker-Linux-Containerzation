@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Differences between Virtualization and Containerization</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body style="background-color:darkblue;">
+<!-- ======= Navigation Section ======= -->
+<nav class="navbar navbar-expand-lg navbar-expand-lg-page3 navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./containerization.html">Containerization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./differences.html">Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./webServer.html">Web Server Using Docker </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="linuxCmd.html">Linux Commands</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Connect Docker with PyCharm</a>
+                </div>
+            </li>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#team">Team</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- ======= End of Navigation Section ======= -->
+<br/>
+<br/>
+<div  class="container-fluid">
+    <h1 id="section1">
+        Virtualization vs. Containerization
+    </h1>
+    <hr class="class-3"/>
+    <div class="row">
+        <div class="col-sm-11">
+            <img src="../images/img6.png" alt="VvsC" height="650px" width="1100px">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <div class="row">
+        <div class="col-sm-11">
+            <p class="text-justify"> The choice of virtualization versus containerization depends on the business development and operational model, and the way applications are written and produced. Both are software technologies that create self-contained virtual packages, but to choose the one that will best suit the user’s needs, we will look at the following points.</p>
+            <p class="text-justify">
+                <ul class="text-justify">
+                    <li> <b>Speed: </b> When it comes to speed, containers were meant to significantly reduce the time needed to deploy and run an application. The container starts immediately, since the operating system is already up and running, so the application will start up without any noticeable delay. This is an excellent solution for a development environment, mainly, as it saves time in the application testing cycle. On the other hand, virtual machines need to start the entire operating system, which includes the full boot process. This will also include the startup of the services, and it will take much longer than it would for a container.</li>
+                    <li> <b>Resources: </b> Since virtual servers run separate operating systems, and every system call has to go through the virtualization layer, a certain amount of overhead is created, causing more resources to be used. This is particularly true for memory usage, as virtual machines consume memory even when they aren’t running any user processes. However, CPU virtualization is relatively cheap, so the CPU overhead of a virtual machine can be much smaller. When it comes to containers, they can start up pretty quickly, so their memory consumption doesn’t increase. There is also much less overhead as they are using the same operating system without a hypervisor to go through.</li>
+                    <li> <b>Security and isolation: </b> In regard to security and isolation, virtualization wins, as it keeps virtual machines separate and isolated from each other. One infected virtual machine will not affect another one, and each virtual machine can incorporate its own security protocols since they are running in a fully isolated environment. However, since containers only isolate data and applications at the process level, they provide a less secure environment and depend on the security protocols of the host system.</li>
+                    <li> <b>Portability and application sharing: </b> Since container images are much smaller than virtual machines, they are easier to transfer and save space on the host’s filesystem. Virtual machines, on the other hand, need to have a copy of the whole operating system, including the kernel, system libraries, configuration files, all the directories required by the operating system and all the utilities. This dramatically increases the size of the image and is not that easy to share. Container images can be shared in any manner of ways, and there are a number of application sharing hubs on the internet. Virtual machine images do not have such centralized hubs and would usually need to be uploaded to another server instead.</li>
+                    <li> <b>Operating system requirements: </b> A virtual machine is best used in the case when a business needs to run multiple applications that require the full functionality of a dedicated operating system. However, if most of the applications have the same operating system requirements, the containers would be a much more practical solution.</li>
+                    <li> <b> Application lifecycle: </b> Containers are highly suitable for short-term application needs, as they can be set up quickly, are portable, and can be started up much faster. They are, however, limited by the lack of a dedicated operating system, processing, and storage resources. Containers should be used when the biggest priority is maximizing the number of applications running on a minimal amount of servers. However, virtual machines are far better suited for applications that need to be used for an extended period of time, since they run in a virtualized environment that is more robust and versatile.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <h1>Hybrid Solutions</h1>
+    <hr class="class-3"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/img5.png" alt="What is Virtualization" height="350px" width="550px">
+        </div>
+        <div class="col-sm-5">
+            <p class="text-justify">
+                However, it is also important to note that there are also ways of combining virtualization and containerization so that both technologies’ advantages are brought together. Such a combination is called a hybrid container architecture, and it can combine them by putting a virtual machine inside of a container, or a single container inside of a virtual machine, or multiple containers inside a virtual machine. This way, we can get the security and isolation of a virtual machine with the quick and lightweight setup of an application inside of a container.
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+</div>
+</body>
+</html>

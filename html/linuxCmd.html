@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Linux Commands</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body style="background-color:darkmagenta;">
+<!-- ======= Navigation Section ======= -->
+<nav class="navbar navbar-expand-lg navbar-expand-lg-page5 navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./containerization.html">Containerization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./differences.html">Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./webServer.html">Web Server Using Docker </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./linuxCmd.html">Linux Commands</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Connect Docker with PyCharm</a>
+                </div>
+            </li>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#team">Team</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- ======= End of Navigation Section ======= -->
+
+<br/>
+<div  class="container-fluid">
+    <h1 id="section1">Linux</h1>
+    <hr class="class-5"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/img7.jpg" alt="What is Virtualization" height="250px" width="250px">
+        </div>
+
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Linux is an operating system's kernel. You might have heard of UNIX. Well, Linux is a UNIX clone. But it was actually created by Linus Torvalds from Scratch. Linux is free and open-source, that means that you can simply change anything in Linux and redistribute it in your own name! There are several Linux Distributions, commonly called “distros”.
+            </p>
+
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <h1 id="section2">Basic Linux Commands</h1>
+    <hr class="class-5"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>pwd </b> — When you first open the terminal, you are in the home directory of your user. To know which directory you are in, you can use the “pwd” command. It gives us the absolute path, which means the path that starts from the root. The root is the base of the Linux file system. It is denoted by a forward slash( / ). The user directory is usually something like "/home/username".
+            </p>
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img8.png" alt="pwd img" >
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify"><b>ls</b> — Use the "ls" command to know what files are in the directory you are in. You can see all the hidden files by using the command “ls -a”.</p>
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img9.png" alt="ls -l img" >
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b> cd</b> - Use the "cd" command to go to a directory. For example, if you are in the home folder, and you want to go to the downloads folder, then you can type in “cd Downloads”.
+            </p>
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img11.png" alt="cd img" >
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+               <b> mkdir & rmdir </b> — Use the mkdir command when you need to create a folder or a directory. For example, if you want to make a directory called “DIY”, then you can type “mkdir DIY”. Remember, as told before, if you want to create a directory named “DIY Hacking”, then you can type “mkdir DIY\ Hacking”. Use rmdir to delete a directory. But rmdir can only be used to delete an empty directory. To delete a directory containing files, use rm.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img10.png" alt="mkdir rmdir img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>rm </b> —  Use the rm command to delete files and directories.  Use "rm -r" to delete just the directory. It deletes both the folder and the files it contains when using only the rm command.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img12.png" alt="rm img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>touch</b> — The touch command is used to create a file. It can be anything, from an empty txt file to an empty zip file. For example, “touch new.txt”.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img13.png" alt="touch img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                <b>cp</b> — Use the cp command to copy files through the command line. It takes two arguments: The first is the location of the file to be copied, the second is where to copy.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img14.png" alt="cp img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                mv — Use the mv command to move files through the command line. We can also use the mv command to rename a file. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img15.png" alt="mv img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                cat — Use the cat command to display the contents of a file. It is usually used to easily view programs.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img16.png" alt="cat cmd">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                sudo — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
+            </p>
+
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img17.jpg" alt="sudo img">
+        </div>
+    </div>
+    <br/>
+
+
+</div>
+</body>
+</html>
