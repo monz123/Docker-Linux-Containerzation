@@ -11,12 +11,7 @@
 .navbar-brand{
   font-size: x-large !important;
 }
-.bg{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  background-image: url('../images/bg1.jpg');
-}
+
 img{
   border-style: solid !important;
 }
@@ -52,6 +47,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bolder !important;
   color: white;
 
+}
+p,li,ul{
+  color: white;
 }
 h1, h2{
   font-family: Georgia !important;
