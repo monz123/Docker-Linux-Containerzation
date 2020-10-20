@@ -18,6 +18,11 @@
   font-weight: bolder;
   font-size: x-large;
 }
+.navbar-expand-lg-page6{
+  background-image: linear-gradient(to right, orangered,darkorange);
+  font-weight: bolder;
+  font-size: x-large;
+}
 .navbar-brand{
   font-size: x-large !important;
 }
@@ -179,4 +184,11 @@ hr.class-4{
 hr.class-2 {
   border-top: 7px solid lightgreen;
 }
+hr.class-6 {
+  border-top: 7px solid orangered;
+}
+.myImage{
+  display: flex;
+}
+
 
