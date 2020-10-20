@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Containerization</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body style="background-color:darkgreen;">
+<!-- ======= Navigation Section ======= -->
+<nav class="navbar navbar-expand-lg navbar-expand-lg-page2 navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Containerization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Web Server Using Docker </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Linux Commands</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Connect Docker with PyCharm</a>
+                </div>
+            </li>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#team">Team</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- ======= End of Navigation Section ======= -->
+<br/>
+<br/>
+<div  class="container-fluid">
+    <h1 id="section1">What is Containerization ?</h1>
+    <hr class="class-2"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/img3.png" alt="What is Virtualization" height="500px" width="550px">
+        </div>
+
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS).
+            </p>
+            <p class="text-justify">
+                A container is essentially a fully packaged and portable computing environment:
+            <ul>
+                <li>Everything an application needs to run – its binaries, libraries, configuration files and dependencies – is encapsulated and isolated in its container. </li>
+                <li> The container itself is abstracted away from the host OS, with only limited access to underlying resources – much like a lightweight virtual machine (VM).</li>
+                <li> As a result, the containerized application can be run on various types of infrastructure—on bare metal, within VMs, and in the cloud—without needing to refactor it for each environment.</li>
+            </ul>
+            </p>
+            <p class="text-justify">
+                That’s because there’s less overhead during startup and no need to set up a separate guest OS for each application since they all share the same OS kernel. Because of this high efficiency, containerization is commonly used for packaging up the many individual microservices that make up modern apps.
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <h1 id="section2">How Does Containerization Actually Work ?</h1>
+    <hr class="class-2"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Each container is an executable package of software, running on top of a host OS. A host(s) may support many containers (tens, hundreds or even thousands) concurrently, such as in the case of a complex microservices architecture that uses numerous containerized ADCs. This setup works because all containers run minimal, resource-isolated processes that others cannot access.
+            </p>
+            <p class="text-justify">
+                Think of a containerized application as the top layer of a multi-tier cake:
+                <ul>
+            <li>At the bottom, there is the hardware of the infrastructure in question, including its CPU(s), disk storage and network interfaces.</li>
+            <li>Above that, there is the host OS and its kernel – the latter serves as a bridge between the software of the OS and the hardware of the underlying system.</li>
+            <li>The container engine and its minimal guest OS, which are particular to the containerization technology being used, sit atop the host OS.</li>
+            <li>At the very top are the binaries and libraries (bins/libs) for each application and the apps themselves, running in their isolated user spaces (containers).</li>
+                </ul>
+            </p>
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img4.png" alt="What is Containerization" height="500px" width="750px">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <h1 id="section3">What are the benefits of Containerization ?</h1>
+    <hr class="class-2"/>
+    <div class="row">
+        <div class="col-sm-10">
+            <p class="text-justify">
+            <ul>
+            <li><h3>More agile, DevOps-oriented software development</h3></li>
+            <p class="text-justify">Compared to VMs, containers are simpler to set up, whether a team is using a UNIX-like OS or Windows. The necessary developer tools are universal and easy to use, allowing for the quick development, packaging and deployment of containerized applications across OSes. DevOps engineers and teams can (and do) leverage containerization technologies to accelerate their workflows.</p>
+            <li><h3>Less overhead and lower costs than VMs</h3></li>
+            <p class="text-justify">A container doesn’t require a full guest OS or a hypervisor. That reduced overhead translates into more than just faster boot times, smaller memory footprints and generally better performance, though. It also helps trim costs, since organizations can reduce some of their server and licensing costs, which would have otherwise gone toward supporting a heavier deployment of multiple VMs. In this way, containers enable greater server efficiency and cost-effectiveness.</p>
+            <li><h3>Excellent portability across digital workspaces</h3></li>
+            <p class="text-justify">Containers make the ideal of “write once, run anywhere” a reality. Each container has been abstracted from the host OS and will run the same in any location. As such, it can be written for one host environment and then ported and deployed to another, as long as the new host supports the container technologies and OSes in question. Linux containers account for a big share of all deployed containers and can be ported across different Linux-based OSes whether they’re on-prem or in the cloud. On Windows, Linux containers can be reliably run inside a Linux VM or through Hyper-V isolation. Such compatibility supports digital workspaces, in which numerous clouds, devices and workflows intersect.</p>
+            <li><h3>Fault isolation for applications and microservices</h3></li>
+            <p class="text-justify">If one container fails, others sharing the OS kernel are not affected, thanks to the user space isolation between them. That benefits microservices-based applications, in which potentially many different components support a larger program. Microservices within specific containers can be repaired, redeployed and scaled without causing downtime of the application.</p>
+            <li><h3>Easier management through orchestration</h3></li>
+            <p class="text-justify">Container orchestration via a solution such as Kubernetes platform makes it practical to manage containerized apps and services at scale. Using Kubernetes, it’s possible to automate rollouts and rollbacks, orchestrate storage systems, perform load balancing and restart any failing containers. Kubernetes is compatible with many container engines including Docker and OCI-compliant ones.</p>
+            </ul>
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+</div>
+</body>
+</html>
