@@ -3,6 +3,11 @@
   font-weight: bolder;
   font-size: x-large;
 }
+.navbar-expand-lg-page1{
+  background-image: linear-gradient(to right, orangered, darkred);
+  font-weight: bolder;
+  font-size: x-large;
+}
 .navbar-brand{
   font-size: x-large !important;
 }
@@ -45,6 +50,8 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lucida Console", Courier, monospace;
   font-weight: bolder !important;
+  color: white;
+
 }
 h1, h2{
   font-family: Georgia !important;
@@ -145,4 +152,7 @@ h1, h2{
   margin: 30px;
   background-color: darkorange;
   box-shadow: 7px 7px orangered;
+}
+hr.class-1 {
+  border-top: 7px solid orangered;
 }
