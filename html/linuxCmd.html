@@ -26,7 +26,7 @@
                     Contents
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
+                    <a class="dropdown-item" href="virtualization.html">Virtualization</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="./containerization.html">Containerization</a>
                     <div class="dropdown-divider"></div>
@@ -162,7 +162,7 @@
     <div class="row">
         <div class="col-sm-5">
             <p class="text-justify">
-                mv — Use the mv command to move files through the command line. We can also use the mv command to rename a file. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.
+                <b>mv</b> — Use the mv command to move files through the command line. We can also use the mv command to rename a file. For example, if we want to rename the file “text” to “new”, we can use “mv text new”. It takes the two arguments, just like the cp command.
             </p>
 
 
@@ -176,7 +176,7 @@
     <div class="row">
         <div class="col-sm-5">
             <p class="text-justify">
-                cat — Use the cat command to display the contents of a file. It is usually used to easily view programs.
+                <b>cat</b> — Use the cat command to display the contents of a file. It is usually used to easily view programs.
             </p>
 
 
@@ -190,7 +190,7 @@
     <div class="row">
         <div class="col-sm-5">
             <p class="text-justify">
-                sudo — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
+                <b>sudo</b> — A widely used command in the Linux command line, sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo command.
             </p>
 
 
@@ -201,8 +201,73 @@
         </div>
     </div>
     <br/>
+    <br/>
+    <h1 id="section3">How to login to Docker Container</h1>
+    <hr class="class-5"/>
+    <div class="row">
+        <div class="col-sm-12">
+            <img align="center" src="../images/img18.png" alt="docker1 img">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>STEP 1:</h4>
+            <p class="text-justify">
+                The docker exec command runs a specified command within an already running container. You can use it to SSH into a Docker container by creating a bash shell (a shell where you can type commands).
+                Start by pulling a Docker image if you haven’t already.
+            <p>For example, you can load Nginx:</p>
+            <p><b>sudo docker pull nginx</b></p>
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/img19.png" alt="docker2 img" width="700px">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>STEP 2:</h4>
+            <p class="text-justify">
 
+            <p>Then, run the image using the below command:</p>
+            <p><b>sudo docker run ––name nginx–test –d nginx</b></p>
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/img20.png" alt="docker3 img" width="700px">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>STEP 3:</h4>
+            <p class="text-justify">
 
+            <p>List all running containers to verify:</p>
+            <p><b>sudo docker ps</b></p>
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/img21.png" alt="docker4 img" width="700px">
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-sm-5">
+            <h4>STEP 4:</h4>
+            <p class="text-justify">
+
+            <p>To get access and run commands in that Docker container, type the following:</p>
+            <p><b>sudo docker exec –it nginx-test /bin/bash</b></p>
+            <p>Now, you are logged in to the nginx-test container. Therefore, any commands you enter will perform in that container. The –i option specifies interactive, and the –t enables a terminal typing interface.</p>
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <img src="../images/img22.png" alt="docker5 img" width="700px">
+        </div>
+    </div>
+    <br/>
 </div>
 </body>
 </html>
