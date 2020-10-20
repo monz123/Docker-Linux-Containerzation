@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtulization</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+</head>
+<body style="background-color:saddlebrown;">
+<!-- ======= Navigation Section ======= -->
+<nav class="navbar navbar-expand-lg navbar-expand-lg-page4 navbar-dark">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Contents
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Containerization</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Comparison</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="./webServer.html">Web Server Using Docker </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Linux Commands</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="">Connect Docker with PyCharm</a>
+                </div>
+            </li>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#team">Team</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- ======= End of Navigation Section ======= -->
+<br/>
+<br/>
+<div  class="container-fluid">
+    <h1 id="section1">Setup Web Server on Local Computer using Docker</h1>
+    <hr class="class-4"/>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="../images/img4a.png" alt="What is Virtualization" height="500px" width="550px">
+        </div>
+
+        <div class="col-sm-5">
+            <p class="text-justify">
+                Step 1 :- The first step is to build our Docker File. Use vim and create a Docker File with the following information.
+            </p>
+            <p class="text-justify">
+                 <b>From ubuntu <br/>
+                 RUN apt-get update <br/>
+                 RUN apt-get install –y apache2 <br/>
+                 RUN apt-get install –y apache2-utils <br/>RUN apt-get clean <br/>
+                     EXPOSE 80 CMD [“apache2ctl”, “-D”, “FOREGROUND”]</b><br/><br/>
+                 The following points need to be noted about the above statements. <br/>
+                 We are first creating our image to be from the Ubuntu base image. Next, we are going to use the RUN command to update all the packages on the Ubuntu system.
+                 Next, we use the RUN command to install apache2 on our image. Next, we use the RUN command to install the necessary utility apache2 packages on our image.
+                 Next, we use the RUN command to clean any unnecessary files from the system. The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.
+                 Finally, the CMD command is used to run apache2 in the background.
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+    <h1 id="section2"></h1>
+    <hr class="class-4"/>
+    <div class="row">
+        <div class="col-sm-5">
+           <p class="text-justify">
+               Step 2 :- Run the Docker build command to build the Docker file. It can be done using the following command. <br/><br/>
+               &nbsp;&nbsp;&nbsp; <b>sudo docker build –t=”mywebserver”</b><br/><br/>
+               We are tagging our image as mywebserver. Once the image is built, you will get a successful message that the file has been built.<br/><br/>
+               Step 3 :- Now that the web server file has been built, it’s now time to create a container from the image. We can do this with the Docker run command.<br/><br/>
+               &nbsp;&nbsp;&nbsp;<b>sudo docker run –d –p 80:80 mywebserver</b> <br/><br/>
+               The following points need to be noted about the above command :- <br/>
+               The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port number to the 80 port number on our localhost.<br/>
+               The –d option is used to run the container in detached mode. This is so that the container can run in the background.<br/>
+               If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and running as shown in the image.
+           </p>
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img4b.png" alt="What is Virtualization" height="250px" width="550px">
+            <img src="../images/img4c.png" alt="What is Virtualization" height="250px" width="550px">
+        </div>
+    </div>
+    <br/>
+    <br/>
+
+</div>
+</body>
+</html>
