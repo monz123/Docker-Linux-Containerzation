@@ -8,6 +8,11 @@
   font-weight: bolder;
   font-size: x-large;
 }
+.navbar-expand-lg-page4{
+  background-image: linear-gradient(to right, saddlebrown, rosybrown);
+  font-weight: bolder;
+  font-size: x-large;
+}
 .navbar-brand{
   font-size: x-large !important;
 }
@@ -153,4 +158,14 @@ h1, h2{
 }
 hr.class-1 {
   border-top: 7px solid orangered;
+}
+hr.class-4{
+  border-top: 7px solid rosybrown;
+}
+.row{
+  margin-left: 50px !important;
+  margin-right: -80px !important;
+}
+.container-fluid{
+  text-align: justify !important;
 }
