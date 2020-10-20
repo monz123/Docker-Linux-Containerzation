@@ -26,7 +26,7 @@
                     Contents
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="">Virtualization</a>
+                    <a class="dropdown-item" href="./virtulization.html">Virtualization</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="">Containerization</a>
                     <div class="dropdown-divider"></div>
@@ -53,13 +53,58 @@
     <hr class="class-1"/>
     <div class="row">
         <div class="col-sm-5">
-            <img src="../images/img1.png" alt="What is Virtualization">
+            <img src="../images/img1.png" alt="What is Virtualization" height="500px" width="550px">
         </div>
 
         <div class="col-sm-5">
-        <p class="text-justify">Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware. Most commonly, it refers to running multiple operating systems on a computer system simultaneously. To the applications running on top of the virtualized machine, it can appear as if they are on their own dedicated machine, where the operating system, libraries, and other programs are unique to the guest virtualized system and unconnected to the host operating system which sits below it.</p>
+            <p class="text-justify">
+                Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware. Most commonly, it refers to running multiple operating systems on a computer system simultaneously. To the applications running on top of the virtualized machine, it can appear as if they are on their own dedicated machine, where the operating system, libraries, and other programs are unique to the guest virtualized system and unconnected to the host operating system which sits below it.
+            </p>
+            <p class="text-justify">
+                 There are many reasons why people utilize virtualization in computing.
+                <ul>
+                    <li>To desktop users, the most common use is to be able to run applications meant for a different operating system without having to switch computers or reboot into a different system. </li>
+                    <li> For administrators of servers, virtualization also offers the ability to run different operating systems, but perhaps, more importantly, it offers a way to segment a large system into many smaller parts, allowing the server to be used more efficiently by a number of different users or applications with different needs.</li>
+                    <li> It also allows for isolation, keeping programs running inside of a virtual machine safe from the processes taking place in another virtual machine on the same host.</li>
+                </ul>
+            </p>
         </div>
     </div>
+    <br/>
+    <br/>
+
+    <h1 id="section2">How are virtual machines managed?</h1>
+    <hr class="class-1"/>
+    <div class="row">
+        <div class="col-sm-5">
+           <p class="text-justify">
+               Virtualization management software is designed to—well—make virtualization more manageable. Sure, you can manually allocate resources into VMs, make space for them on servers, test them, and install patches as needed. But splitting single systems into hundreds means multiplying the work needed to keep those systems running, up to date, and secure.
+               If all the VMs are tied to a monitoring, provisioning, or management tool, systems can be migrated automatically to better-suited hardware during periods of peak use or maintenance. Imagine a farm of servers that can be retasked in seconds—according to workload and time of day. As a particular guest instance begins consuming more resources, the monitoring system moves that guest to another server with less demand or or allocates more resources to it from a central pool.
+           </p>
+
+        </div>
+
+        <div class="col-sm-5">
+            <img src="../images/img2.png" alt="What is Virtualization" height="500px" width="550px">
+        </div>
+    </div>
+    <br/>
+    <br/>
+    <h1 id="section3">What are the benefits of virtualization ?</h1>
+    <hr class="class-1"/>
+    <div class="row">
+        <div class="col-sm-10">
+            <p class="text-justify">
+                <ul>
+                    <li> Virtualizing resources lets administrators pool their physical resources, so their hardware can truly be commoditized. So the legacy infrastructure that's expensive to maintain, but supports important apps, can be virtualized for optimal use.</li>
+                    <li> Administrators no longer have to wait for every app to be certified on new hardware; just set up the environment, migrate the VM, and everything works as before. During regression tests, a testbed can be created or copied easily, eliminating the need for dedicated testing hardware or redundant development servers. With the right training and knowledge, these environments can be further optimized to gain greater capabilities and density.</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+    <br/>
+    <br/>
+
 </div>
 </body>
 </html>
