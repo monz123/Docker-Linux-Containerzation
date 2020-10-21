@@ -180,7 +180,9 @@ h1, h2,h3{
 hr.class-1 {
   border-top: 7px solid orangered;
 }
-
+hr.class-7 {
+  border-top: 7px solid dimgrey;
+}
 hr.class-4{
   border-top: 7px solid rosybrown;
 }
