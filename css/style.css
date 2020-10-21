@@ -140,42 +140,54 @@ h1, h2,h3{
   margin-left: 80px;
   margin-right: 80px;
   height: 3in;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  font-size: 35px !important;
 }
 .main-branch1{
   width: 33.33%;
   margin: 30px;
   background-color: darkred;
   box-shadow: 7px 7px orangered;
+  padding-top: 80px;
 }
 .main-branch2{
   width: 33.33%;
   margin: 30px;
   background-color: darkgreen;
   box-shadow: 7px 7px lightgreen;
+  padding-top: 80px;
 }
 .main-branch3{
   width: 33.33%;
   margin: 30px;
   background-color: darkblue;
   box-shadow: 7px 7px deepskyblue;
+  padding-top: 50px;
 }
 .main-branch4{
   width: 33.33%;
   margin: 30px;
   background-color: saddlebrown;
   box-shadow: 7px 7px rosybrown;
+  padding-top: 30px;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 .main-branch5{
   width: 33.33%;
   margin: 30px;
   background-color: darkmagenta;
   box-shadow: 7px 7px magenta;
+  padding-top: 30px;
 }
 .main-branch6{
   width: 33.33%;
   margin: 30px;
   background-color: darkorange;
   box-shadow: 7px 7px orangered;
+  padding-top: 30px;
 }
 hr.class-1 {
   border-top: 7px solid orangered;
@@ -211,4 +223,20 @@ hr.class-3 {
 
 hr.class-5 {
   border-top: 7px solid magenta;
+}
+.bg{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url('../images/bg1.jpg');
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #23272b;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)) ;
 }
